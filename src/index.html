@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="icon" href="./assets/img/logo.webp" type="image/webp"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="./scripts/main.js"> </script>
 </head>
 <body class="fade-in">
@@ -44,19 +45,34 @@
     <h2>Projects</h2>
     <div class="project-grid">
         <div class="project-card">
-            <h3><a href="https://github.com/hemanth5544/MediaSync">MediaSync</a></h3>
-            <p>Aug '23 - Present</p>
+            <h3>
+                <a href="https://mediasync.up.railway.app/" target="_blank">MediaSync</a>
+                <a href="https://github.com/hemanth5544/MediaSync" target="_blank" aria-label="GitHub repository">
+                  <i class="fab fa-github" style="margin-left: 8px;"></i>
+                </a>
+              </h3>              
+            <p>Mar '25 - Present</p>
             <p class="description">A Real time communication platform. Tech: React, Node.js,Sockets,WebRTC.</p>
         </div>
         <div class="project-card">
-            <h3><a href="https://github.com/hemanth5544/InkSync">InkSync</a></h3>
-            <p>Jan '22 - Jan '23</p>
+            <h3>
+                <a href="https://inksync-gjzj.onrender.com" target="_blank">InkSync</a>
+                <a href="https://github.com/hemanth5544/InkSync" target="_blank" aria-label="GitHub repository">
+                    <i class="fab fa-github" style="margin-left: 8px;"></i>
+                  </a>
+            </h3>
+            <p>Feb '25 </p>
             <p class="description">A collabrative Editor with secure email access . Tech: NodeJS, JavaScript, MongoDB.</p>
         </div>
         <div class="project-card">
-            <h3><a href="https://github.com/hemanth5544/SecureServer">SecureServer</a></h3>
-            <p>Feb '21</p>
-            <p class="description">Full acces to your devices on internt . Tech: React, NodeJS, Sqlite,Redis.</p>
+            <h3>
+                <a href="https://hemuserver-io.onrender.com" target="_blank">SecureServer</a>
+                <a href="https://github.com/hemanth5544/SecureServer" target="_blank" aria-label="GitHub repository">
+                    <i class="fab fa-github" style="margin-left: 8px;"></i>
+                  </a>
+            </h3>
+            <p>Oct '24</p>
+            <p class="description">Full access to your devices on internt . Tech: React, NodeJS, Sqlite,Redis.</p>
         </div>
     
     </div>
@@ -69,9 +85,60 @@
         <tr><td>movies/shows</td></tr> -->
     </table>
     <div class="cta">
-        <a href="mailto:hemanth@example.com" class="cta-button">Get in Touch</a>
+        <a href="mailto:rachapalli.hemanth5544@gmail.com" class="cta-button">Get in Touch</a>
     </div>
     <footer>This website is self-hosted entirely from my <a href="https://github.com/hemanth5544/">Railway</a>!</footer>
-
+    <div id="cookie-drawer" class="cookie-drawer">
+        <div class="cookie-drawer-content">
+          <div class="cookie-header">
+            <h3>Privacy "Notice" </h3>
+            <span class="close-btn" onclick="closeCookieDrawer()">×</span>
+          </div>
+          <div class="cookie-body">
+            <p>We <em>definitely</em> respect your privacy with these "necessary" features:</p>
+            <div class="tracking-options">
+              <div class="tracking-option">
+                <label for="essential-cookies">
+                  <svg class="icon" data-lucide="cookie"></svg>
+                  <span class="option-text">
+                    <strong>Cookies</strong>
+                    <small>We know where you hide your snacks</small>
+                  </span>
+                </label>
+              </div>
+              <div class="tracking-option">
+                <label for="analytics-cookies">
+                  <svg class="icon" data-lucide="eye"></svg>
+                  <span class="option-text">
+                    <strong>Browser Fingerprints</strong>
+                    <small>We make you unique and "rob" you</small>
+                  </span>
+                </label>
+              </div>
+              <div class="tracking-option">
+                
+                <label for="thoughts">
+                  <svg class="icon" data-lucide="brain"></svg>
+                  <span class="option-text">
+                    <strong>AI Mind Reading</strong>
+                    <small>We know what you want before you do</small>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="cookie-footer">
+            <button class="reject-btn" onclick="handleCookieChoice('reject')">No Escape</button>
+            <button class="accept-btn" onclick="handleCookieChoice('accept')">Surrender All</button>
+          </div>
+        </div>
+      </div>
+      <div id="cookie-button" class="cookie-button" onclick="openCookieDrawer()">
+        <svg class="cookie-icon" data-lucide="cookie"></svg>
+      </div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>    
 </body>
 </html>
