@@ -38,9 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
   function handleCookieChoice(choice) {
     localStorage.setItem('cookieChoice', choice);
     
-    const message = choice === 'accept' 
-    ? "LOL! You thought 'accept' saves you? You're tracked forever! 😈" 
-    : "Nice try, rebel! Your 'rejection' just joined our data party! 👁️‍🗨️";
+    const message = "Don't worry! We're not tracking you like some monopoly browsers do. 😈"
     
     showToast(message);
     
@@ -56,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
       toast.style.position = 'fixed';
       toast.style.bottom = '20px';
       toast.style.right = '20px';
-      toast.style.backgroundColor = 'rgba(30, 30, 35, 0.9)';
+      toast.style.backgroundColor = " rgba(199, 167, 25, 0.5)";
       toast.style.color = 'white';
       toast.style.padding = '12px 16px';
       toast.style.borderRadius = '8px';
